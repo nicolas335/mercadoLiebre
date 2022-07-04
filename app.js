@@ -1,5 +1,5 @@
-const express = require ('express')
-const app = express()
+const express = require ('express');
+const app = express();/*  funcion de alto nivel */
 const path = require("path");
 const port = 3000;
 

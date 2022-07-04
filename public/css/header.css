@@ -1,5 +1,6 @@
 .header{
     display: flex;
+    background-color: var(--amarillo);
 }
 .home header{
     font-weight: 12px;
