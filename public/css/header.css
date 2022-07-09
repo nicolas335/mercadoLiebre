@@ -20,9 +20,10 @@
         margin-bottom: 20px;}
 
 .logo{
-            margin-left: 30px;
-            padding-top: 40px;
-        }
+    width: 50%;
+    margin-left: 30px;
+    padding-top: 40px;
+}
 .home .header i{
     margin-left: 3px;
 }
@@ -46,4 +47,23 @@
 }
 .links{
     margin-bottom: 15px;
+}
+header .links{
+    display: none;
+}
+/* Tablet */
+@media (min-width:461px) {
+
+    header .links{
+        display: block;
+    }
+    header .burger{
+        display: none;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:769px) {
+
 }

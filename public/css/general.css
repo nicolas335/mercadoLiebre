@@ -13,9 +13,10 @@ ul li a{
 ul{
     list-style-type: none;
 }
-img{
-    width: 50%;
+body{
+    background-color: var(--grisClaro);
 }
+
 
 /* Tamaños Tipográficos
 Cuerpos de texto: 12px

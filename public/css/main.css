@@ -1,0 +1,53 @@
+main{
+    width: 90%;
+    margin: 0 auto;
+
+}
+main section{
+    padding: 20px 0;
+}
+main section article{
+    margin: 10px 0;
+    background-color: white;
+}
+main section h3{
+    font-size: 24px;
+    color: var(--grisOscuro);
+}
+main section article .descuento,main section article .camion{
+    color: var(--verde);
+}
+main section article img{
+    width: 100%;
+}
+main section article h5{
+    color: var(--grisOscuro);
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+main section article .contenedor{
+    border-top: 1px solid var(--grisClaro);
+    padding: 15px;
+}
+main section article .camion i{
+    padding: 10px;
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    font-size: 12px;
+}
+/* Tablet */
+@media (min-width:461px) {
+    main section article{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    } 
+    main section article h5{
+        display: block;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:769px) {
+
+}
