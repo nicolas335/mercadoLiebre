@@ -55,15 +55,72 @@ header .links{
 @media (min-width:461px) {
 
     header .links{
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        margin-bottom: 0;
     }
     header .burger{
         display: none;
+    }
+    .headerListTop, .headerListBottom{
+        display: flex;
+    }
+    .headerListTop li, .headerListBottom li{
+        margin: 10px;
+    }
+    .slogan{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        font-size: 14px;
+    }
+    .logo{
+        width: 28%;
+    }
+    .searchBar{
+        position: absolute;
+        top: 10%;
+        left: 29%;
+    }
+    .header{
+        padding-bottom: 0;
     }
 
 }
 
 /* Desktop */
 @media (min-width:769px) {
-
+    header .links{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        margin-bottom: 0;
+    }
+    header .burger{
+        display: none;
+    }
+    .headerListTop, .headerListBottom{
+        display: flex;
+    }
+    .headerListTop li, .headerListBottom li{
+        margin: 10px;
+    }
+    .slogan{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        font-size: 14px;
+    }
+    .logo{
+        width: 28%;
+    }
+    .searchBar{
+        position: absolute;
+        top: 10%;
+        left: 29%;
+    }
+    .header{
+        padding-bottom: 0;
+    }
 }

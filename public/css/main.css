@@ -1,18 +1,32 @@
 main{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
 }
 main section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 20px 0;
 }
 main section article{
     margin: 10px 0;
     background-color: white;
 }
+
+main section article div:nth-child(2n){
+    position: relative;
+    padding: 30px; 
+}
+
+/* encerrar el contenido de las card en un div y darle position relative como segunda opcion */
+
+
 main section h3{
     font-size: 24px;
     color: var(--grisOscuro);
+    margin: 25px 0;   
+    text-align: center;
 }
 main section article .descuento,main section article .camion{
     color: var(--verde);
@@ -36,6 +50,20 @@ main section article .camion i{
     border-radius: 50%;
     font-size: 12px;
 }
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
+   
 /* Tablet */
 @media (min-width:461px) {
     main section article{
