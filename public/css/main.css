@@ -1,81 +1,146 @@
-main{
-    width: 100%;
+main {
+    width: 90%;
     margin: 0 auto;
-
-}
-main section{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-main section article{
-    margin: 10px 0;
-    background-color: white;
-}
-
-main section article div:nth-child(2n){
-    position: relative;
-    padding: 30px; 
-}
-
-/* encerrar el contenido de las card en un div y darle position relative como segunda opcion */
-
-
-main section h3{
-    font-size: 24px;
-    color: var(--grisOscuro);
-    margin: 25px 0;   
-    text-align: center;
-}
-main section article .descuento,main section article .camion{
-    color: var(--verde);
-}
-main section article img{
+  }
+  
+  section img {
     width: 100%;
-}
-main section article h5{
+  }
+  
+  main section h3.titulares {
+    font-size: 1.3rem;
     color: var(--grisOscuro);
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 8px;
-}
-main section article .contenedor{
-    border-top: 1px solid var(--grisClaro);
-    padding: 15px;
-}
-main section article .camion i{
+    margin-left: 10px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 0.2rem rgb(200, 200, 200);
+    margin-bottom: 1rem;
+  }
+  
+  main section.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  main .precios {
+    width: 30%;
+  }
+  
+  main .descuentos {
+    width: 70%;
+  }
+  
+  main .precios,
+  main .descuentos {
+    align-content: baseline;
+  }
+  
+  p.precios,
+  h3.descripcion {
+    font-size: 1.125rem; 
+    color: #666;
+  }
+  
+  p.descuentos {
+    font-size: 1rem; 
+  }
+  
+  main section div article {
+    margin: 10px 0;
+    background-color: #fff;
+  }
+  
+  main article div {
+    border-top: solid 1px var(--grisClaro);
+    margin: 0 15px;
     padding: 10px;
-    border: 1px solid var(--verde);
-    border-radius: 50%;
-    font-size: 12px;
-}
-main section article i{
+  }
+  main article img {
+    width: 100%;
+  }
+  
+  main div i,
+  .descuentos {
+    color: var(--verde);
+  }
+  
+  main .description {
+    width: 30%;
+  }
+  
+  main div {
+    position: relative;
+  }
+  
+  main div i {
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 5px;
     width: 30px;
     height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
+    border: solid 1px var(--verde);
     border-radius: 50%;
+    background-color: #fff;
     position: absolute;
     right: 20px;
     top: -15px;
-   }
-   
-/* Tablet */
-@media (min-width:461px) {
-    main section article{
-        box-shadow: 0 0 10px rgb(100, 100, 100);
-    } 
-    main section article h5{
-        display: block;
+  }
+  
+  main h3.descripcion {
+    padding-top: 20px;
+    margin: 20px 0;
+  }
+  
+  main .precios {
+    width: 70%;
+    display: inline;
+  }
+  
+  main .descuentos {
+    width: 30%;
+    display: inline;
+  }
+  
+  @media (min-width: 576px) {
+    main section article {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+  
+    main section div.contenedor-productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    main section h3.titulares {
+      margin-left: 30px;
+    }
+  
+    main section div article {
+      width: 44%;
+      margin: 0.5rem;
+    }
+  
+    main section div article:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    main section h3.titulares {
+      margin-left: 45px;
+    }
+  
+    main section div article {
+      width: 22%;
+    }
+  
+    p.descuentos,
+    h3.descripcion {
+      font-size: 1rem;
+    }
+  }
 
-}
 
-/* Desktop */
-@media (min-width:769px) {
-
-}
