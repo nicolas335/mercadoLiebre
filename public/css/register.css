@@ -1,0 +1,73 @@
+.register main{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    background-color: var(--grisClaro);
+    font-family: var(--fuentePrincp);
+    margin-top: 25px;
+}
+.register main a{
+    color: var(--celeste);
+    list-style: none;
+    text-decoration-line: none;
+}
+
+.register main form{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.register form .container{
+    margin: 10px 0;
+}
+
+.register form .container span{
+    color: #E02413;
+}
+.register main form .container small{
+    display: inline-block;
+    color: #E02413;
+}
+
+.register form .container input, .register .container label{
+    width: 90%;
+    height: 25px;
+    border: none;
+    padding: 20px;
+}
+
+.register form .category-container input, .register  form .perfil-container input{
+    display: inline-block;
+}
+
+.register form .category-container label, .register form .perfil-container label{
+    display: inline-block;
+}
+
+.register form .buttons button{
+    padding: 10px;
+    font-size: medium;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border: none;
+    box-shadow:  0px 0px 10px rgb(82, 82, 82);
+}
+
+.register form .buttons .submit{
+    background-color: var(--amarillo);
+    color: var(--grisClaro);
+}
+
+.register form .buttons .reset{
+    background-color: #FA5300;
+    color: var(--grisClaro);
+}
+
+
+

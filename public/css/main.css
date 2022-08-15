@@ -1,13 +1,13 @@
-main {
+  .home main {
     width: 90%;
     margin: 0 auto;
   }
   
-  section img {
+  .home section img {
     width: 100%;
   }
   
-  main section h3.titulares {
+  .home main section h3.titulares {
     font-size: 1.3rem;
     color: var(--grisOscuro);
     margin-left: 10px;
@@ -18,63 +18,63 @@ main {
     margin-bottom: 1rem;
   }
   
-  main section.contenedor-productos {
+  .home main section.contenedor-productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   
-  main .precios {
+  .home main .precios {
     width: 30%;
   }
   
-  main .descuentos {
+  .home main .descuentos {
     width: 70%;
   }
   
-  main .precios,
-  main .descuentos {
+  .home main .precios,
+  .home main .descuentos {
     align-content: baseline;
   }
   
-  p.precios,
-  h3.descripcion {
+  .home p.precios,
+  .home h3.descripcion {
     font-size: 1.125rem; 
     color: #666;
   }
   
-  p.descuentos {
+  .home p.descuentos {
     font-size: 1rem; 
   }
   
-  main section div article {
+  .home main section div article {
     margin: 10px 0;
     background-color: #fff;
   }
   
-  main article div {
+  .home main article div {
     border-top: solid 1px var(--grisClaro);
     margin: 0 15px;
     padding: 10px;
   }
-  main article img {
+  .home main article img {
     width: 100%;
   }
   
-  main div i,
-  .descuentos {
+  .home main div i,
+  .home .descuentos {
     color: var(--verde);
   }
   
-  main .description {
+  .home main .description {
     width: 30%;
   }
   
-  main div {
+  .home main div {
     position: relative;
   }
   
-  main div i {
+  .home main div i {
     display: block;
     font-size: 1rem;
     padding: 5px;
@@ -88,57 +88,57 @@ main {
     top: -15px;
   }
   
-  main h3.descripcion {
+  .home main h3.descripcion {
     padding-top: 20px;
     margin: 20px 0;
   }
   
-  main .precios {
+  .home main .precios {
     width: 70%;
     display: inline;
   }
   
-  main .descuentos {
+  .home main .descuentos {
     width: 30%;
     display: inline;
   }
   
   @media (min-width: 576px) {
-    main section article {
+    .home main section article {
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
   
-    main section div.contenedor-productos {
+    .home main section div.contenedor-productos {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
   
-    main section h3.titulares {
+    .home main section h3.titulares {
       margin-left: 30px;
     }
   
-    main section div article {
+    .home main section div article {
       width: 44%;
       margin: 0.5rem;
     }
   
-    main section div article:hover {
+    .home main section div article:hover {
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
   }
   
   @media (min-width: 768px) {
-    main section h3.titulares {
+    .home main section h3.titulares {
       margin-left: 45px;
     }
   
-    main section div article {
+    .home main section div article {
       width: 22%;
     }
   
-    p.descuentos,
-    h3.descripcion {
+    .home p.descuentos,
+    .home h3.descripcion {
       font-size: 1rem;
     }
   }
